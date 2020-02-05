@@ -22,7 +22,7 @@ export const Auth = styled.ul`
   border: solid black;
   border-radius: 10px;
 
-  padding: 10px 0 10px 0;
+  padding: 20px 20px 10px 20px;
 
   div {
     margin-top: 2px;
