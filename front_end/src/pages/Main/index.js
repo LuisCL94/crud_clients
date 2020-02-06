@@ -7,11 +7,13 @@ import NameInput from "../../components/NameInput";
 
 import { Button } from "@material-ui/core";
 
+import { Redirect } from "react-router";
+
 export default class Main extends Component {
   state = {
     acessAllowed: false,
     name: "",
-    password: ""
+    password: "",
   }
 
   handleInputName = e => {
@@ -36,7 +38,6 @@ export default class Main extends Component {
           <h1>Autenticação de Usuário</h1>
 
           <Auth>
-
             <NameInput
               label="Nome"
               value={this.state.name}
@@ -49,18 +50,24 @@ export default class Main extends Component {
               onChange={this.handleInputPassword}
             />
 
-            {console.log("nome: " + this.state.name +"\npassword: " + this.state.password)}
+            {console.log(
+              "nome: " + this.state.name + "\npassword: " + this.state.password
+            )}
 
             <Button
               variant="contained"
               color="primary"
               onClick={this.validatePassword}
             >
-
-            {console.log("Permissao: " + this.state.acessAllowed)}
+              {console.log("Permissao: " + this.state.acessAllowed)}
               Autenticar
             </Button>
 
+            {this.state.acessAllowed && this.state.name === "admin"? 
+            ( <Redirect push to="/adminUser" /> ) : (<></>) }
+
+            {this.state.acessAllowed && this.state.name === "user" ?
+              (<Redirect push to="/comumUser" />) : (<></>)}
 
           </Auth>
         </MainPage>
