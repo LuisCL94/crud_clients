@@ -8,10 +8,10 @@ export default class NameInput extends Component {
   render() {
     return (
         <TextField
+          style={{width: "295px"}}
           variant="outlined"
           margin="normal"
           required
-          fullWidth
           label={this.props.label}
           value={this.props.value}
           onChange={this.props.onChange}

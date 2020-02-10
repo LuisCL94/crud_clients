@@ -24,6 +24,7 @@ export default class InputPassword extends Component {
         value={this.props.value}
         onChange={this.props.onChange}
         required
+        margin = "normal"
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
@@ -41,7 +42,6 @@ export default class InputPassword extends Component {
             </InputAdornment>
           )
         }}
-        style={{ marginTop: "10px" }}
       />
     );
   }
