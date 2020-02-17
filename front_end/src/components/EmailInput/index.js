@@ -15,10 +15,10 @@ export default class EmailInput extends Component {
         margin="normal"
         required
         id="email"
-        label={this.props.label}
+        label="Email"
+        name={this.props.name}
         value={this.props.value}
         onChange={this.props.onChange}
-        name="email"
         // autoComplete="email"
         // autoFocus
         InputProps={{

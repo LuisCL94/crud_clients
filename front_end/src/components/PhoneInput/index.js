@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
-import PropTypes from 'prop-types';
 import MaskedInput from 'react-text-mask';
 import { TextField } from "@material-ui/core";
 
-const TextMaskCellNumber = (props) => {
+const cellPhoneMask = ['(', /\d/, /\d/, ')', ' ', /\d/, ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+
+const otherMask = ['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+
+const TextMask = (props) => {
   const { inputRef, ...other } = props;
 
   return (
@@ -13,50 +16,34 @@ const TextMaskCellNumber = (props) => {
       ref={ref => {
         inputRef(ref ? ref.inputElement : null);
       }}
-      mask={['(', /\d/, /\d/, ')', ' ', /\d/, ' ', /\d/, /\d/, /\d/, /\d/, '-',/\d/, /\d/, /\d/, /\d/]}
+      mask={currentMask}
       placeholderChar={'\u2000'}
-      showMask
+      // showMask
     />
   );
 }
 
-
-const TextMaskOtherNumber = (props) => {
-  const { inputRef, ...other } = props;
-
-  return (
-    <MaskedInput
-      {...other}
-      ref={ref => {
-        inputRef(ref ? ref.inputElement : null);
-      }}
-      mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/, ' ',]}
-      placeholderChar={'\u2000'}
-      showMask
-    />
-  );
-}
-
-var currentMask;
+let currentMask;
 
 export default class PhoneInput extends Component {
   render() {
-    if(this.props.tipo === "Celular")
-      currentMask = TextMaskCellNumber;
+    if(this.props.type === "Celular")
+      currentMask = cellPhoneMask;
     else
-      currentMask = TextMaskOtherNumber;
+      currentMask = otherMask;
 
     return (
       <TextField
         style={{ width: "295px" }}
         margin="normal"
         required
-        label={this.props.label}
+        label="Telefone"
+        name={this.props.name}
         value={this.props.value}
         onChange={this.props.onChange}
         variant="outlined"
         InputProps={{
-          inputComponent: currentMask
+          inputComponent: TextMask
         }}
       />
     );

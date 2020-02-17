@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -18,15 +18,8 @@ const currencies = [
   }
 ];
 
-
 export default function MultilineTextFields(props) {
   
-  const [currency, setCurrency] = React.useState("");
-
-  const handleChange = event => {
-    setCurrency(event.target.value);
-  };
-
   return (
 
       <div>
@@ -34,14 +27,13 @@ export default function MultilineTextFields(props) {
           style={{width:"130px", marginRight:"10px"}}
           id="outlined-select-currency"
           select
-          label={props.label}
+          label="Tipo"
+          name={props.name}
           value={props.value}
           onChange={props.onChange}
-          // helperText="Please select your currency"
           variant="outlined"
           margin="normal"
         >
-        {/* {console.log("esse e o valor: " + currency)} */}
           {currencies.map(option => (
             <MenuItem key={option.value} value={option.value}>
               {option.label}

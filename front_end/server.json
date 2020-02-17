@@ -1,14 +1,211 @@
 {
   "clients": [
     {
-      "id": 1,
-      "name": "Luis Claudio",
-      "cpf": "00684827107"
+      "name": "Luís Cláudio Telles Lima",
+      "cpf": "00684827107",
+      "emails": [
+        "lclaudio.tl@gmail.com",
+        "luclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ],
+        [
+          "Comercial",
+          "6133518421"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "afasdfasdf"
+      ],
+      "id": 8
     },
     {
-      "id": 2,
-      "name": "Adriana",
-      "cpf": "52470920159"
+      "name": "Luis Claudio Telles Lima",
+      "cpf": "00684827107",
+      "emails": [
+        "lclaudio.tl@gmail.com",
+        "asdfsdf"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "6185136440"
+        ],
+        [
+          "Comercial",
+          "6199833644"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105",
+        ""
+      ],
+      "id": 9
+    },
+    {
+      "name": "Luis Claudio Telles Lima",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "99999999",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105 Lotes 9/10, Bloco C Apt 102",
+        ""
+      ],
+      "id": 10
+    },
+    {
+      "name": "Luis Claudio Telles Lima",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "99999999",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105 Lotes 9/10, Bloco C Apt 102",
+        ""
+      ],
+      "id": 11
+    },
+    {
+      "name": "Luis Claudio Telles Lima",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "99999999",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105 Lotes 9/10, Bloco C Apt 102",
+        ""
+      ],
+      "id": 12
+    },
+    {
+      "name": "Luis Claudio Telles Limaafasdfasdf",
+      "cpf": "00684827107",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Taguatinga",
+        "Norte (Águas Claras)",
+        "qd 105 lts 9 10 bloco C apt 102, Aguas Claras",
+        ""
+      ],
+      "id": 13
+    },
+    {
+      "name": "fasdfasd",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105",
+        ""
+      ],
+      "id": 14
+    },
+    {
+      "name": "fasdfasd",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105",
+        ""
+      ],
+      "id": 15
+    },
+    {
+      "name": "Luis Claudio Telles Lima",
+      "cpf": "00685834584",
+      "emails": [
+        "lclaudio.tl@gmail.com"
+      ],
+      "phones": [
+        [
+          "Celular",
+          "61998336440"
+        ]
+      ],
+      "adress": [
+        "71915250",
+        "DF",
+        "Brasília",
+        "Norte (Águas Claras)",
+        "Quadra 105 Lotes 9/10, Bloco C Apt 102",
+        ""
+      ],
+      "id": 16
     }
   ]
 }

@@ -12,7 +12,8 @@ export default class NameInput extends Component {
           variant="outlined"
           margin="normal"
           required
-          label={this.props.label}
+          label="Nome"
+          name = {this.props.name}
           value={this.props.value}
           onChange={this.props.onChange}
           type="text"

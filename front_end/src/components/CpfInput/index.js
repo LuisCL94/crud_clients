@@ -15,7 +15,7 @@ function TextMaskCustom(props) {
       }}
       mask={[/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/ ,/\d/]}
       placeholderChar={'\u2000'}
-      showMask
+      // showMask
     />
   );
 }
@@ -28,10 +28,11 @@ export default class CpfInput extends Component {
   render() {
     return (
       <TextField
-        style={{ width: "295px" }}
+        style={{ width: "150px" }}
         margin="normal"
         required
-        label={this.props.label}
+        label="Cpf"
+        name = {this.props.name}
         value={this.props.value}
         onChange={this.props.onChange}
         variant="outlined"
