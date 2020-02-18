@@ -20,6 +20,8 @@ import apiViaCep from "../../services/apiViaCep";
 import { Button } from "@material-ui/core";
 import * as EmailValidator from "email-validator";
 
+import { Redirect } from "react-router-dom";
+
 function alpha_numeric_filter(string) {
   return string.replace(/[\W_-]/g, "");
 }
@@ -47,6 +49,8 @@ export default class RegisterClient extends Component {
     bairro: "",
     logradouro: "",
     complemento: "",
+
+    registerDone: false,
   }
 
   handleChange = e => {
@@ -159,7 +163,13 @@ export default class RegisterClient extends Component {
           this.state.complemento
         ]
       };
-      api.post('clients', params);
+      api.post('clients', params)
+      .then((response) => {
+        console.log(response)
+        this.setState({ registerDone: true });
+      }, (error) => {
+        console.log(error);
+      });
     }
     else {      
       this.eraseInfoAdress();
@@ -362,6 +372,9 @@ export default class RegisterClient extends Component {
         >
           Salvar
         </Button>
+
+        {this.state.registerDone ? <Redirect to="/adminUser" /> : (<></>)}
+
       </>
     );
   }

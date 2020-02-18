@@ -7,7 +7,7 @@ import NameInput from "../../components/NameInput";
 
 import { Button } from "@material-ui/core";
 
-import { Redirect } from "react-router";
+import { Redirect } from "react-router-dom";
 
 export default class Main extends Component {
   state = {
@@ -64,10 +64,10 @@ export default class Main extends Component {
             </Button>
 
             {this.state.acessAllowed && this.state.name === "admin"? 
-            ( <Redirect to="/adminUser" /> ) : (<></>) }
+              <Redirect to="/adminUser" /> : (<></>) }
 
             {this.state.acessAllowed && this.state.name === "user" ?
-              (<Redirect to="/comumUser" />) : (<></>)}
+              <Redirect to="/comumUser" /> : (<></>)}
 
           </Auth>
         </MainPage>
