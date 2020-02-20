@@ -26,28 +26,6 @@
         "Lotes 9/10 bloco C apt 102"
       ],
       "id": 1
-    },
-    {
-      "name": "123421341324",
-      "cpf": "12341234123",
-      "emails": [
-        "lclaudio.tl@gmail.com"
-      ],
-      "phones": [
-        [
-          "Celular",
-          "61998336440"
-        ]
-      ],
-      "adress": [
-        "71915250",
-        "DF",
-        "Brasília",
-        "Norte (Águas Claras)",
-        "Quadra 105 Lotes 9/10, Bloco C Apt 102",
-        ""
-      ],
-      "id": 2
     }
   ]
 }

@@ -102,6 +102,7 @@ export const Content3 = styled.div`
     border: 2px solid black;
     border-radius: 5px;
     padding: 0 10px;
+    padding-bottom: 10px;
   
   }
 
